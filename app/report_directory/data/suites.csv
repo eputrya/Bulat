@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Jun 24 13:34:37 MSK 2024","Mon Jun 24 13:34:41 MSK 2024","3292","app.tests.ZebOS_1.5.GRE","test_check","","","","test_check_ver_platform",""

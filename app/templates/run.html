@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Selection of tests</title>
+    <link rel="apple-touch-icon" sizes="120x120" href="../static/favicons/apple-touch-icon.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/favicons/favicon-32x32.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/favicons/favicon-16x16.jpg">
+    <link type="text/css" href="../static/css/all.min.css" rel="stylesheet">
+    <link type="text/css" href="../static/css/neumorphism.css" rel="stylesheet">
+    <link type="text/css" href="../static/css/toastr.min.css" rel="stylesheet">
+</head>
+<body>
+<header class="header-global">
+    <nav id="navbar-main" aria-label="Primary navigation"
+         class="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom navbar-light navbar-transparent navbar-theme-primary">
+        <div class="container position-relative"><a
+                class="navbar-brand shadow-soft py-2 px-3 rounded border border-light mr-lg-4"
+                href="{{ url_for('main.devices') }}"><img
+                class="navbar-brand-dark" src="../static/img/logo_bulat.png" alt="Logo light"> <img
+                class="navbar-brand-light"
+                src="../static/img/logo_bulat.png"
+                alt="Logo"></a>
+
+            <span class="text-muted font-medium py-2 px-3">{{ name }}</span>
+        </div>
+
+    </nav>
+</header>
+<main>
+    <div class="section section-lg2 pt-4 margin-container-top">
+        <div class="container">
+
+            <div class="row justify-content-center text-center pt-3"></div>
+            <div class="row">
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-12 col-lg-12">
+                    <div class="accordion shadow-soft rounded" id="accordionExample1">
+                        <div class="card card-sm card-body bg-primary border-light mb-0"><a href="#panel-1"
+                                                                                            data-target="#panel-1"
+                                                                                            class="accordion-panel-header"
+                                                                                            data-toggle="collapse"
+                                                                                            role="button"
+                                                                                            aria-expanded="false"
+                                                                                            aria-controls="panel-1"><span
+                                class="h6 mb-0 font-weight-bold">Описание</span> <span class="icon"><span
+                                class="fas fa-plus"></span></span></a>
+                            <div class="collapse" id="panel-1">
+                                <div class="pt-3"><img class="img-my rounded mx-auto d-block"
+                                                       src="data:image/png;base64, {{ img }}"
+                                                       alt="GRE Tunnel"></div>
+                                <div class="test-configuration test-configuration2">{{ des | safe }}</div>
+                            </div>
+                        </div>
+                        <div class="card card-sm card-body bg-primary border-light mb-0"><a href="#panel-2"
+                                                                                            data-target="#panel-2"
+                                                                                            class="accordion-panel-header"
+                                                                                            data-toggle="collapse"
+                                                                                            role="button"
+                                                                                            aria-expanded="false"
+                                                                                            aria-controls="panel-1"><span
+                                class="h6 mb-0 font-weight-bold">Конфигурация</span> <span class="icon"><span
+                                class="fas fa-plus"></span></span></a>
+                            <div class="collapse" id="panel-2">
+                                <div class="pt-3 test-configuration test-configuration2">{{ conf | safe }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="row mb-3">
+            <form id="connectForm" class="col-12 d-flex align-items-center justify-content-center" method="POST"
+                  action="{{ url_for('main.check_connect') }}">
+                <div class="col-2 mb-3 d-flex justify-content-center align-items-center bg-image-One">
+                </div>
+                <div class="col-2 mb-3">
+                    <label>
+                        <input type="text" name="login" class="form-control" required="" placeholder="Login">
+                    </label>
+                    <div class="valid-feedback"></div>
+                </div>
+                <div class="col-2 mb-3">
+                    <label>
+                        <input type="text" name="password" class="form-control" required="" placeholder="Password">
+                    </label>
+                    <div class="valid-feedback"></div>
+                </div>
+                <div class="col-2 mb-3">
+                    <label>
+                        <input type="text" name="ip" class="form-control" required="" placeholder="IP address">
+                    </label>
+                    <div class="valid-feedback"></div>
+                </div>
+                <div class="col-2 mb-3">
+                    <label>
+                        <input type="text" name="port" class="form-control" required="" placeholder="Port">
+                    </label>
+                    <div class="valid-feedback"></div>
+                </div>
+                <div class="col-2 mb-3">
+                    <button class="btn btn-outline-gray mr-2 mb-3" type="submit">Check connect</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                <div class="col-2 mb-3 d-flex justify-content-center align-items-center bg-image-TWO">
+                </div>
+                <div class="col-2 mb-3 d-flex justify-content-center align-items-center">
+                    <button class="btn btn-outline-gray mr-2 mb-3" id="showVersionButton" type="button">Show version
+                    </button>
+                </div>
+                <div class="col-2 mb-3 d-flex justify-content-center align-items-center">
+                    <button class="btn btn-outline-gray mr-2 mb-3" id="showConfigButton" type="button">Show config
+                    </button>
+                </div>
+                <div class="col-2 mb-3 d-flex justify-content-center align-items-center">
+                    <button class="btn btn-outline-gray mr-2 mb-3" id="DefaultConfigButton" type="button">Default
+                        config
+                    </button>
+                </div>
+                <div class="col-2 mb-3 d-flex justify-content-center align-items-center">
+                    <form id="uploadForm">
+                        <button class="btn btn-outline-gray mr-2 mb-3" id="UploadButton" type="button">Upload config
+                        </button>
+                    </form>
+                </div>
+                <div class="col-2 mb-3 d-flex justify-content-center align-items-center">
+                    <button class="btn btn-outline-gray mr-2 mb-3" id="StartTestButton" type="button">Start test
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                <div class="col-2 mb-3 d-flex justify-content-center align-items-center bg-image-THREE">
+                </div>
+                <div class="col-2 mb-3 d-flex justify-content-center align-items-center">
+                    <button class="btn btn-outline-gray mr-2 mb-3" id="showReportButton" type="button">Show result
+                    </button>
+                </div>
+                <div class="col-8 mb-3 d-flex justify-content-center align-items-center">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="../static/js/jquery.min.js"></script>
+<script src="../static/js/popper.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/headroom.min.js"></script>
+<script src="../static/js/on-screen.umd.min.js"></script>
+<script src="../static/js/nouislider.min.js"></script>
+<script src="../static/js/bootstrap-datepicker.min.js"></script>
+<script src="../static/js/jquery.waypoints.min.js"></script>
+<script src="../static/js/jarallax.min.js"></script>
+<script src="../static/js/jquery.counterup.min.js"></script>
+<script src="../static/js/jquery.countdown.min.js"></script>
+<script src="../static/js/smooth-scroll.polyfills.min.js"></script>
+<script src="../static/js/prism.js"></script>
+<script async defer src="../static/js/buttons.js"></script>
+<script src="../static/js/neumorphism.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../static/js/toastr.min.js"></script>
+<script src="../static/js/check_connect.js"></script>
+<script src="../static/js/get_version.js"></script>
+<script src="../static/js/get_running_config.js"></script>
+<script src="../static/js/jquery-3.6.0.min.js"></script>
+<script src="../static/js/upload.js"></script>
+<script src="../static/js/copy_default_config.js"></script>
+<script src="../static/js/start_test.js"></script>
+<script src="../static/js/show_result.js"></script>
+
+</body>
+</html>

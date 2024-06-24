@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Network devices</title>
+    <link rel="apple-touch-icon" sizes="120x120" href="../static/favicons/apple-touch-icon.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/favicons/favicon-32x32.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/favicons/favicon-16x16.jpg">
+    <link type="text/css" href="../static/css/all.min.css" rel="stylesheet">
+    <link type="text/css" href="../static/css/neumorphism.css" rel="stylesheet">
+</head>
+<body>
+<main>
+    <div class="section section-lg pt-0">
+        <div class="container margin-container-top">
+            <div class="col-12 col-lg-10">
+                <div class="card bg-primary shadow-soft border-light mb-6">
+                    <div class="card-body px-5 py-5 text-center text-md-left">
+                        <div class="row align-items-center">
+                            <div class="col-md-6"><h2 class="mb-3">Коммутаторы агрегации</h2>
+                                <p class="mb-0">Высокая отказоустойчивость аппаратных служб коммутатора, ультранизкие
+                                    задержки при Cut-through коммутации и поддержка оверлейных технологий делают
+                                    коммутаторы агрегации отличным решением для серверного доступа в средних и крупных
+                                    центрах обработки данных.</p></div>
+                            <div class="col-md-3 text-md-right">
+                                <a href="{{ url_for('main.selection_of_the_test', device_name='ZebOS_1.5') }}"
+                                   class="btn btn-primary margin_button_top"><span
+                                        class="mr-1"><span></span> </span>BS7500-48Y6C</a>
+                                <a href="{{ url_for('main.selection_of_the_test', device_name='ZebOS_3.4') }}"
+                                   class="btn btn-primary margin_button_top"><span
+                                        class="mr-1"><span></span> </span>BS7500-48X6Q</a>
+                                <a href="{{ url_for('main.selection_of_the_test', device_name='ZebOS_1.5') }}"
+                                   class="btn btn-primary margin_button_top"><span
+                                        class="mr-1"><span></span> </span>BS7510-32C</a>
+                            </div>
+                            <div class="col-md-3 text-md-left">
+                                <a href="{{ url_for('main.selection_of_the_test', device_name='ZebOS_1.5') }}"
+                                   class="btn btn-primary margin_button_top"><span
+                                        class="mr-1"><span></span> </span>BS4520</a>
+                                <a href="{{ url_for('main.selection_of_the_test', device_name='ZebOS_1.5') }}"
+                                   class="btn btn-primary margin_button_top"><span
+                                        class="mr-1"><span></span> </span>BS4522</a>
+                                <a href="{{ url_for('main.selection_of_the_test', device_name='ZebOS_1.5') }}"
+                                   class="btn btn-primary margin_button_top"><span
+                                        class="mr-1"><span></span> </span>BS5120</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-10">
+                <div class="card bg-primary shadow-soft border-light mb-6">
+                    <div class="card-body px-5 py-5 text-center text-md-left">
+                        <div class="row align-items-center">
+                            <div class="col-md-6"><h2 class="mb-3">Коммутаторы доступа</h2>
+                                <p class="mb-0">Серия BS2500 управляемых коммутаторов уровня L2 предназначена для
+                                    использования в корпоративных сетях на уровне доступа.</p></div>
+                            <div class="col-md-3 text-md-right"><a href="{{ url_for('main.selection_of_the_test', device_name='ZebOS_1.5') }}"
+                                                                   class="btn btn-primary"><span
+                                    class="mr-1"></span>BS2500-24P4X</a></div>
+                            <div class="col-md-3 text-md-left"><a href="{{ url_for('main.selection_of_the_test', device_name='ZebOS_1.5') }}"
+                                                                  class="btn btn-primary"><span
+                                    class="mr-1">BS2500-24P4S</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-10">
+                <div class="card bg-primary shadow-soft border-light mb-6">
+                    <div class="card-body px-5 py-5 text-center text-md-left">
+                        <div class="row align-items-center">
+                            <div class="col-md-6"><h2 class="mb-3">Маршрутизаторы</h2>
+                                <p class="mb-0">Мультисервисный маршрутизатор «БУЛАТ» серии BR100 представляет собой
+                                    полнофункциональную платформу конвергентного доступа, предназначенную для
+                                    экономически эффективного предоставления услуг проводной и беспроводной
+                                    связи.</p></div>
+                            <div class="col-md-3 text-md-right"><a href="{{ url_for('main.selection_of_the_test', device_name='ZebOS_1.5') }}"
+                                                                   class="btn btn-primary"><span
+                                    class="mr-1"></span>BR850</a></div>
+                            <div class="col-md-3 text-md-left"><a href="{{ url_for('main.selection_of_the_test', device_name='ZebOS_1.5') }}"
+                                                                  class="btn btn-primary"><span
+                                    class="mr-1">BR100</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-10">
+                <div class="card bg-primary shadow-soft border-light mb-6">
+                    <div class="card-body px-5 py-5 text-center text-md-left">
+                        <div class="row align-items-center">
+                            <div class="col-md-6"><h2 class="mb-3">vCPE</h2>
+                                <p class="mb-0">Линейка BM устройств- это маршрутизатор, предназначенный для подключения
+                                    к Интернет малых предприятий и терминалов, а также использования в составе сетей
+                                    SD-WAN.
+                                </p></div>
+                            <div class="col-md-3 text-md-right"><a href="{{ url_for('main.selection_of_the_test', device_name='ZebOS_1.5') }}"
+                                                                   class="btn btn-primary"><span
+                                    class="mr-1"></span>BM1300</a></div>
+                            <div class="col-md-3 text-md-left"><a href="{{ url_for('main.selection_of_the_test', device_name='ZebOS_1.5') }}"
+                                                                  class="btn btn-primary"><span
+                                    class="mr-1">BM10</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-10">
+                <div class="card bg-primary shadow-soft border-light mb-6">
+                    <div class="card-body px-5 py-5 text-center text-md-left">
+                        <div class="row align-items-center">
+                            <div class="col-md-6"><h2 class="mb-3">Серверы</h2>
+                                <p class="mb-0">Сервер «БУЛАТ» BS — современное изделие российского производства,
+                                    предназначенное для построения информационных систем с высокой плотностью
+                                    вычислительных ресурсов, в том числе для систем виртуализации.</p></div>
+                            <div class="col-md-2 text-md-right"><a href="{{ url_for('main.selection_of_the_test', device_name='ZebOS_1.5') }}"
+                                                                   class="btn btn-primary margin_button_top"><span
+                                    class="mr-1"></span>BS-102</a></div>
+                            <div class="col-md-2 text-md-right">
+                                <a href="{{ url_for('main.selection_of_the_test', device_name='ZebOS_1.5') }}"
+                                   class="btn btn-primary margin_button_top"><span
+                                        class="mr-1">BS-201</span></a></div>
+                            <div class="col-md-2 text-md-right">
+                                <a href="{{ url_for('main.selection_of_the_test', device_name='ZebOS_1.5') }}"
+                                   class="btn btn-primary margin_button_top"><span
+                                        class="mr-1">BS-202</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-10">
+                <div class="card bg-primary shadow-soft border-light mb-6">
+                    <div class="card-body px-5 py-5 text-center text-md-left">
+                        <div class="row align-items-center">
+                            <div class="col-md-6"><h2 class="mb-3">Системы хранения</h2>
+                                <p class="mb-0">Система хранения БУЛАТ - современное изделие
+                                    российского производства обеспечивающее высокую доступность, надёжность и большие
+                                    объёмы хранения данных, предназначенная для использования в системах виртуализации,
+                                    управления базами данных (СУБД).</p></div>
+                            <div class="col-md-6 text-md-center"><a href="{{ url_for('main.selection_of_the_test', device_name='ZebOS_1.5') }}"
+                                                                    class="btn btn-primary margin_button_top"><span
+                                    class="mr-1"></span>B-DSS-500</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="../static/js/jquery.min.js"></script>
+<script src="../static/js/popper.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/headroom.min.js"></script>
+<script src="../static/js/on-screen.umd.min.js"></script>
+<script src="../static/js/nouislider.min.js"></script>
+<script src="../static/js/bootstrap-datepicker.min.js"></script>
+<script src="../static/js/jquery.waypoints.min.js"></script>
+<script src="../static/js/jarallax.min.js"></script>
+<script src="../static/js/jquery.counterup.min.js"></script>
+<script src="../static/js/jquery.countdown.min.js"></script>
+<script src="../static/js/smooth-scroll.polyfills.min.js"></script>
+<script src="../static/js/prism.js"></script>
+<script async defer src="../static/js/buttons.js"></script>
+<script src="../static/js/neumorphism.js"></script>
+</body>
+</html>

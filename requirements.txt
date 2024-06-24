@@ -1,0 +1,9 @@
+Flask~=3.0.3
+Flask-SQLAlchemy
+Flask-Migrate
+pytest~=8.2.2
+Werkzeug~=3.0.3
+alembic~=1.13.1
+SQLAlchemy~=2.0.30
+PyYAML~=6.0.1
+netmiko~=4.3.0

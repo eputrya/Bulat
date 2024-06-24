@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Selection of tests</title>
+    <link rel="apple-touch-icon" sizes="120x120" href="../static/favicons/apple-touch-icon.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/favicons/favicon-32x32.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/favicons/favicon-16x16.jpg">
+    <link type="text/css" href="../static/css/all.min.css" rel="stylesheet">
+    <link type="text/css" href="../static/css/neumorphism.css" rel="stylesheet">
+
+</head>
+<body>
+<header class="header-global">
+    <nav id="navbar-main" aria-label="Primary navigation"
+         class="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom navbar-light navbar-transparent navbar-theme-primary">
+        <div class="container position-relative"><a
+                class="marr navbar-brand shadow-soft py-2 px-3 rounded border border-light mr-lg-4"
+                href="{{ url_for('main.devices') }}"><img
+                class="navbar-brand-dark" src="../static/img/logo_bulat.png" alt="Logo light"> <img
+                class="navbar-brand-light"
+                src="../static/img/logo_bulat.png"
+                alt="Logo"></a>
+            <div class="navbar-collapse collapse" id="navbar_global">
+                <div class="navbar-collapse-header">
+                    <div class="row">
+                        <div class="col-6 collapse-brand"><a href="{{ url_for('main.devices') }}"
+                                                             class="navbar-brand shadow-soft py-2 px-3 rounded border border-light"><img
+                                src="../static/img/logo_bulat.png" alt="Themesberg logo"></a></div>
+                        <div class="col-6 collapse-close"><a href="{{ url_for('main.devices') }}" class="fas fa-times"
+                                                             data-toggle="collapse" data-target="#navbar_global"
+                                                             aria-controls="navbar_global" aria-expanded="false"
+                                                             title="close" aria-label="Toggle navigation"></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center">
+                <button id="Virtual" class="btn btn-outline-gray d-none d-md-inline-block mr-3">Virtual</button>
+                <button id="Physical" class="btn btn-outline-gray d-none d-md-inline-block mr-3">Physical</button>
+                <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar_global"
+                        aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="section section-lg pt-4 margin-container-top">
+        <div class="container">
+            <form method="post">
+                <div class="row justify-content-center text-center pt-3"></div>
+                <div class="col-12 col-lg-12">
+                    <div class="card bg-primary shadow-soft border-light mb-6">
+                        <div class="card-body px-5 py-5 text-center text-md-left">
+                            <div class="row align-items-center">
+                                <div class="col-md-2"><h4 class="mb-3">L2 layer</h4>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check square-check">
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-1" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-1">
+                                        Learning,
+                                        Forwarding</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-2" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="l2-2">Jumbo frame</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-3" disabled> <label class="form-check-label margin-checkbox"
+                                                                          for="l2-3">Static MAC</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-4" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-4">Size
+                                        MAC-table</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-5" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-5">MAC
+                                        ageing
+                                        timer</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-6" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-6">Error
+                                        Disable</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-7" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-7">Port
+                                        Security</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-8" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-8">L2
+                                        Protocol
+                                        Tunneling</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-9" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-9">Flow
+                                        Control</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-10" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-10">Config
+                                        MAC
+                                        on
+                                        interface</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-11" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="l2-11">LLDP</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-12" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-12">Access/Hybrid</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-13" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="l2-13">Trunk</label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check square-check">
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-14" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-14">VLAN
+                                        Translation</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-15" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-15">Private
+                                        VLAN</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-16" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-16">Port-based
+                                        VLAN</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-17" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-17">MAC-based
+                                        VLAN</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-18" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-18">IP-based
+                                        VLAN</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-19" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-19">Protocol-based
+                                        VLAN</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-20" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="l2-20">MVRP/GVRP</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-21" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-21">Port
+                                        based
+                                        Q-in-Q</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-22" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-22">Selective
+                                        Q-in-Q</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-23" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-23">Root
+                                        Guard</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-24" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-24">BPDU
+                                        Filter</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-25" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-25">Edge
+                                        Port</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-26" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-26">Loop
+                                        Guard</label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check square-check">
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-27" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-27">Loopback
+                                        Detection</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-28" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="l2-28">RSTP</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-29" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="l2-29">MSTP</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-30" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="l2-30">LACP</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-31" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-31">Balanced
+                                        LACP</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-32" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="l2-32">MC-LAG</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-33" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-33">MTU
+                                        config
+                                        on
+                                        interface</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-34" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-34">MAC
+                                        config
+                                        on
+                                        interface</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-35" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-35">BPDU
+                                        Guard</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-36" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="l2-36">Untag/Single/Double-tagged</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-37" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-37">Port
+                                        dampening</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-38" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-38">MSTP
+                                        cost</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l2-39" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l2-39">MSTP
+                                        change
+                                        config</label>
+                                    </div>
+                                    <div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-12">
+                    <div class="card bg-primary shadow-soft border-light mb-6">
+                        <div class="card-body px-5 py-5 text-center text-md-left">
+                            <div class="row align-items-center">
+                                <div class="col-md-2"><h4 class="mb-3">L3 layer</h4>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check square-check">
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-1" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-1">Static
+                                        Routing</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-2" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="l3-2">Static
+                                        Routing priority</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-3" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="l3-3">OSPF enable on
+                                        interface</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-4" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-4">OSPF
+                                        ABR</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-5" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-5">OSPF
+                                        redistributed</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-6" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-6">OSPF
+                                        cost</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-7" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-7">OSPF
+                                        virtual
+                                        link</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-8" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-8">OSPF
+                                        authentication</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-9" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-9">OSPF
+                                        multi
+                                        instance</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-10" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-10">OSPF
+                                        multi
+                                        instance</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-11" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-11">OSPF
+                                        multi-area
+                                        adjacency</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-12" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="l3-12">VRF</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-13" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="l3-13">ECMP</label>
+                                        <input class="form-check-input" type="checkbox"
+                                               id="l3-14" value="1" name="test" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="l3-14">GRE</label>
+                                        <input class="form-check-input" type="checkbox"
+                                               id="l3-15" value="1" name="test" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="l3-15">L3MTU</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-16" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-16">IS-IS
+                                        adjacency</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-17" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-17">IS-IS
+                                        priority</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-18" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-18">IS-IS
+                                        redistribution</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-19" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-19">IS-IS
+                                        metric</label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check square-check">
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-20" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-20">IS-IS
+                                        Leve-1/Level</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-21" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-21">IS-IS
+                                        authentication</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-22" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="l3-22">iBGP</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-23" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="l3-23">eBGP</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-24" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-24">eBGP
+                                        Multihop</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-25" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-25">BGP
+                                        Route
+                                        Reflector</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-26" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-26">BGP
+                                        Confederations</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-27" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-27">BGP
+                                        Peer
+                                        Groups</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-28" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-28">BGP
+                                        changes
+                                        attributes</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-29" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-29">BGP
+                                        4-byte
+                                        AS</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-30" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-30">BGP
+                                        Communities</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-31" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-31">BGP
+                                        Multipath</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-32" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-32">BGP
+                                        Selective FIB
+                                        Install</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-33" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-33">BGP
+                                        Dampening</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-34" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-34">BGP
+                                        authentication</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-35" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-35">VXLAN
+                                        unicast/multicast</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-36" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="l3-36">PRB</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-37" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="l3-37">VRRP</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-38" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="l3-38">BFD</label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check square-check">
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-39" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-39">BGP
+                                        EVPN</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-40" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-40">VxLAN
+                                        Anycast
+                                        Gateway</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-41" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-41">VxLAN
+                                        Centralized
+                                        Gateway</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-42" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-42">QoS
+                                        802.1p-based</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-43" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-43">QoS
+                                        DSCP-based</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-44" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-44">QoS
+                                        Policing
+                                        Unicast</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-45" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-45">QoS
+                                        Policing
+                                        BUM</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-46" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-46">QoS
+                                        SP+WDRR</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-47" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-47">QoS
+                                        Queueing</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-48" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-48">QoS
+                                        ECN</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-49" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="l3-49">LDP</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-50" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-50">QoS
+                                        Remarking</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-51" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-51">IGMP
+                                        Snooping
+                                        Filtering</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-52" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-52">IGMP
+                                        Snooping
+                                        Dynamic/Static</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-53" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-53">IGMPv3
+                                        Snooping</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-54" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-54">IGMP
+                                        Filtering</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-55" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="l3-55">MVR</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-56" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="l3-56">Static
+                                        Membership</label>
+                                        <input class="form-check-input" type="checkbox" value="1" name="test"
+                                               id="l3-57" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="l3-57">PIM-SM</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-12">
+                    <div class="card bg-primary shadow-soft border-light mb-6">
+                        <div class="card-body px-5 py-5 text-center text-md-left">
+                            <div class="row align-items-center">
+                                <div class="col-md-2"><h4 class="mb-3">Security</h4>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check square-check">
+                                        <input class="form-check-input" type="checkbox"
+                                               value="1" name="test"
+                                               id="sec-1" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="sec-1">AAA</label>
+                                        <input class="form-check-input" type="checkbox"
+                                               value="1" name="test"
+                                               id="sec-2" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="sec-2">CoPP ACL
+                                    </label>
+                                        <input class="form-check-input" type="checkbox"
+                                               value="1" name="test"
+                                               id="sec-3" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="sec-3">L2 ACL
+                                    </label>
+                                        <input class="form-check-input" type="checkbox"
+                                               value="1" name="test"
+                                               id="sec-4" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="sec-4">L3 ACL
+                                    </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check square-check">
+                                        <input class="form-check-input" type="checkbox"
+                                               value="1" name="test"
+                                               id="sec-5" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="sec-5">Custom
+                                        ACL
+                                    </label>
+                                        <input class="form-check-input" type="checkbox"
+                                               value="1" name="test"
+                                               id="sec-6" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="sec-6">IP/MAC
+                                        Binding
+                                        (Static)
+                                    </label>
+                                        <input class="form-check-input" type="checkbox"
+                                               value="1" name="test"
+                                               id="sec-7" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="sec-7">IP/MAC
+                                        Binding
+                                        (Dynamic)
+                                    </label>
+                                        <input class="form-check-input" type="checkbox"
+                                               value="1" name="test"
+                                               id="sec-8" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="sec-8">IP
+                                        Source
+                                        Guard
+                                    </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check square-check">
+                                        <input class="form-check-input" type="checkbox"
+                                               value="1" name="test"
+                                               id="sec-9" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="sec-9">Dynamic
+                                        ARP
+                                        inspection
+                                    </label>
+                                        <input class="form-check-input" type="checkbox"
+                                               value="1" name="test"
+                                               id="sec-10" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="sec-10">DHCP
+                                        Snoopingn
+                                    </label>
+                                        <input class="form-check-input" type="checkbox"
+                                               value="1" name="test"
+                                               id="sec-11" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="sec-11">DHCP
+                                        opt
+                                        82
+                                    </label>
+                                        <input class="form-check-input" type="checkbox"
+                                               value="1" name="test"
+                                               id="sec-12" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="sec-12">CoPP
+                                        Ingress CPU
+                                        Queues
+                                    </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-12">
+                    <div class="card bg-primary shadow-soft border-light mb-6">
+                        <div class="card-body px-5 py-5 text-center text-md-left">
+                            <div class="row align-items-center">
+                                <div class="col-md-2"><h4 class="mb-3">Managment</h4>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check square-check">
+                                        <input class="form-check-input" type="checkbox"
+                                               value="1" name="test"
+                                               id="mgmn-1" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid" for="mgmn-1">Console,
+                                        Telnet,
+                                        SSH</label>
+                                        <input class="form-check-input" type="checkbox"
+                                               value="1" name="test"
+                                               id="mgmn-2" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="mgmn-2">Update OS</label>
+                                        <input class="form-check-input" type="checkbox"
+                                               value="1" name="test"
+                                               id="mgmn-3" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="mgmn-3">Save/recovery OS</label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check square-check">
+                                        <input class="form-check-input" type="checkbox"
+                                               value="1" name="test"
+                                               id="mgmn-4" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="mgmn-4">NTP</label>
+                                        <input class="form-check-input" type="checkbox"
+                                               value="1" name="test"
+                                               id="mgmn-5" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="mgmn-5">SPAN</label>
+
+                                        <input class="form-check-input" type="checkbox"
+                                               value="1" name="test"
+                                               id="mgmn-6" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="mgmn-6">RSPAN</label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check square-check">
+                                        <input class="form-check-input" type="checkbox"
+                                               value="1" name="test"
+                                               id="mgmn-7" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="mgmn-7">SNMP</label>
+
+                                        <input class="form-check-input" type="checkbox"
+                                               value="1" name="test"
+                                               id="mgmn-8" disabled> <label
+                                            class="form-check-label margin-checkbox container-fluid"
+                                            for="mgmn-8">DHCP</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-12">
+                        <a class="aa " href="{{ url_for('main.start_test') }}">
+                            <button id="nextButton" type="submit" style="display: none;"
+                                    class="btn btn-outline-gray confirm float-right">Confirm
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</main>
+
+<script src="../static/js/jquery.min.js"></script>
+<script src="../static/js/popper.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/headroom.min.js"></script>
+<script src="../static/js/on-screen.umd.min.js"></script>
+<script src="../static/js/nouislider.min.js"></script>
+<script src="../static/js/bootstrap-datepicker.min.js"></script>
+<script src="../static/js/jquery.waypoints.min.js"></script>
+<script src="../static/js/jarallax.min.js"></script>
+<script src="../static/js/jquery.counterup.min.js"></script>
+<script src="../static/js/jquery.countdown.min.js"></script>
+<script src="../static/js/smooth-scroll.polyfills.min.js"></script>
+<script src="../static/js/prism.js"></script>
+<script async defer src="../static/js/buttons.js"></script>
+<script src="../static/js/neumorphism.js"></script>
+<script src="../static/js/choice.js"></script>
+</body>
+</html>

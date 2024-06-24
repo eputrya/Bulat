@@ -1,0 +1,5 @@
+Test №1
+Валидация платформы
+Platform version: BS7510-48X6Q
+Platform is BS7510-48X6Q, it's ok!
+
